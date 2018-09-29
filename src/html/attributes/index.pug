@@ -1,0 +1,19 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'HTML Attributes for beginers';
+        var myDescription = 'Attributes provide aditional information about HTML elements';
+        var landingPage = 'HTML';
+        var activeLink = '/html/attributes';
+
+block awsome-content
+    h1=myTitle
+    p=myDescription
+
+    h2 Example
+    p(title='This is a tooltip') this paragraph has a tooltip. 
+    a(href="https://youtube.com") And this link is connected to Youtube
+    p The next image will have width of 200 and height of 100
+    img(src="https://perezcarreno.com/wp-content/uploads/2013/01/lorempixel-image.jpeg", alt="Image", width="200", height="100")
+

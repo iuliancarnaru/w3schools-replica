@@ -1,0 +1,29 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn CSS colors for beginers';
+        var myDescription = 'Colors in CSS are easy to use';
+        var landingPage = 'CSS';
+        var activeLink = '/css/colors';
+
+block awsome-content
+    h1=myTitle
+    p=myDescription
+
+    h2 Example
+    h3 Color Names
+    p Color set by using color names.
+    table(width='100%')
+        tr
+            td(bgcolor='red', width='50%')
+            td red
+        tr
+            td(bgcolor='green', width='50%')
+            td green
+        tr
+            td(bgcolor='blue', width='50%')
+            td blue
+        tr
+            td(bgcolor='orange', width='50%')
+            td orange

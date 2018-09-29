@@ -1,0 +1,19 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'Learn CSS bordersfor beginers';
+        var myDescription = 'CSS borders are amazing';
+        var landingPage = 'CSS';
+        var activeLink = '/css/borders';
+
+block awsome-content
+    h1=myTitle
+    p=myDescription
+    h2 CSS Border Properties
+    p  The CSS border properties allow you to specify the style, width, and color of an element's border.
+    h4 Border - Shorthand Property
+    ul
+        li border-width
+        li border-style (required)
+        li border-color

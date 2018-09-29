@@ -1,0 +1,16 @@
+extends ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'HTML Elements for beginers';
+        var myDescription = 'An HTML element usually consists of a start tag and and end tag.';
+        var landingPage = 'HTML';
+        var activeLink = '/html/elements';
+
+block awsome-content
+    h1=myTitle
+    p=myDescription
+
+    h1 Not my frist heading
+    p Not my first paragraph and we cand #[br]use break tag and #[span(style='color:blue') the "span" tag].
+
